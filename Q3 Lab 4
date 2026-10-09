@@ -1,0 +1,11 @@
+employees = []
+
+for i in range(3):
+    print(f"\nEnter Employee {i+1}:")
+    name = input("Its Name: ")
+    age =  int(input("Its Age: "))
+    salary =int(input("Its Salary: "))
+    
+    tuple = (name, age, salary)
+    employees.append(tuple)
+print("\nAll Employees List:",employees)

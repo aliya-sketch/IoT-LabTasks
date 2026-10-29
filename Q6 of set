@@ -1,0 +1,18 @@
+
+A = {1, 2, 3, 4}
+B = {3, 4, 5, 6}
+
+#  unique elements .....
+print("Union A | B:", A | B) 
+
+#  elements common to both 
+print("Intersection A & B:", A & B) 
+
+# A - B and B - A
+print("A - B:", A - B)  
+print("B - A:", B - A)  
+# Explanation: Difference is not symmetric. A-B gives elements that are in A but not in B,
+# while B-A gives elements that are in B but not in A, so results differ.....
+
+# (Symmetric Difference)
+print("Symmetric Difference A ^ B:", A ^ B)  

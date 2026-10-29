@@ -1,0 +1,12 @@
+
+marks = {
+    'Ali': 85,
+    'Sara': 95,
+    'Ahmed': 95,
+    'Noor': 78
+}
+h = max(marks.values())
+print(f"Highest marks: {h}")
+for name, mark in marks.items():
+    if mark == h:
+        print(f"{name}: {mark}")

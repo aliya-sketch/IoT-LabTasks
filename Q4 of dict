@@ -1,0 +1,10 @@
+
+word= ['apple', 'ant', 'banana', 'ball', 'cat']
+group= {}
+for w in word:
+    first_letter = w[0]
+    if first_letter not in group:
+        group[first_letter] = []
+    group[first_letter].append(w)
+
+print(group)

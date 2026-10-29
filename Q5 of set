@@ -1,0 +1,4 @@
+
+v = {1, 2, 2, 3, 3, 3, 4}
+print(len(v)) 
+# Explanation: Set automatically removes duplicates, so only {1,2,3,4} remains in the set.......!

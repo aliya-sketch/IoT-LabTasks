@@ -1,0 +1,33 @@
+def check_password(password):
+    if len(password) < 8:
+        return "Weak: At least 8 characters required"
+
+    upper = False
+    lower = False
+    digit = False
+    special = False
+
+    for ch in password:
+        if ch.isupper():
+            upper = True
+        elif ch.islower():
+            lower = True
+        elif ch.isdigit():
+            digit = True
+        else:
+            special = True
+
+    if not upper:
+        return "Weak password...atleast one uppercase letter required"
+    if not lower:
+        return "Weak password...atleast one lowercase letter required"
+    if not digit:
+        return "Weak password..atleast one digit required"
+    if not special:
+        return "Weak password...atleast one special character required"
+
+    return "Strong Password!"
+
+print(check_password("Aliya@123"))
+print(check_password("aliya123"))
+print(check_password("Imcs2026"))

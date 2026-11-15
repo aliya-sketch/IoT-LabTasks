@@ -1,0 +1,13 @@
+class Car:
+    def __init__(self, brand, color):
+        self.brand = brand
+        self.color = color
+#method
+    def start(self):
+        print("The car is starting.")
+
+# Object 
+my = Car("Toyota", "Black")
+print("Brand:", my.brand)
+print("Color:", my.color)
+my.start()

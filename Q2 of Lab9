@@ -1,0 +1,18 @@
+class Book:
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author
+
+    def display_info(self):
+        print("Title:", self.title)
+        print("Author:", self.author)
+        
+
+# Three book....
+book1 = Book("Python Programming", "Aliya")
+book2 = Book("Data Structures", "Ahmed")
+book3 = Book("Artificial Intelligence", "Sara")
+
+book1.display_info()
+book2.display_info()
+book3.display_info()
